@@ -165,22 +165,28 @@
 					<h1>Testing!</h1>
 				</section>
 				<section>
-					<h2>A note about TDD, BDD, and integration tests</h2>
-					<p>
-						I don't think a script TDD or BDD approach is completely neccessary to produce quality code, however I do belive that unit tests and integration tests
-						are strictly neccessary for a quality code base. Here is my working definitation of Unit tests and integration tests:
-						<ul>
-							<li>
-								Unit tests are tests that only interact with your codebase. For example no ajax calls out are actually executed, no browser apis or library apis
-								called directly without wrapping code, and the test is strictly responsible for testing a small descrete section of code. I personally like to limit
-								my unit tests to testing single functions were possible. It's very often neccessary to mock out external calls. I use <a href="http://sinonjs.org/">
-									Sinon.js</a> to handle most of my mocking needs.
-							</li>
-							<li>
-								Integration tests are broader and my general, system wide type of tests. An ajax call out to an external/server side API is a good example. Integration
-								testing is a broader subject and I'll stick to unit testing in these slides.
-							</li>
-					</p>
+					<section>
+						<h2>A note about TDD, BDD, and integration tests</h2>
+						<p>
+							I don't think a script TDD or BDD approach is completely neccessary to produce quality code, however I do belive that unit tests and integration tests
+							are strictly neccessary for a quality code base. Here is my working definitation of Unit tests and integration tests:
+						</p>
+					</section>
+					<section>
+						<p>
+							<ul>
+								<li>
+									Unit tests are tests that only interact with your codebase. For example no ajax calls out are actually executed, no browser apis or library apis
+									called directly without wrapping code, and the test is strictly responsible for testing a small descrete section of code. I personally like to limit
+									my unit tests to testing single functions were possible. It's very often neccessary to mock out external calls. I use <a href="http://sinonjs.org/">
+										Sinon.js</a> to handle most of my mocking needs.
+								</li>
+								<li>
+									Integration tests are broader and my general, system wide type of tests. An ajax call out to an external/server side API is a good example. Integration
+									testing is a broader subject and I'll stick to unit testing in these slides.
+								</li>
+						</p>
+					</section>
 				</section>
 				<section id="transitions">
 					<h2>Mochai? Chai? really the coffee names have gone far enough</h2>
@@ -222,12 +228,13 @@
 					</p>
 				</section>
 				<section>
-					<h2>Let's look at an examples</h2>
+					<h2>Let's look at an example</h2>
 					<p>
 						I setup a sample project using backbone.js app with mocha, chai, sinon, testem, grunt, npm, and bower.
 					</p>
-					<a href="http://github.com/jaegerpicker/JSUnitTestBackBone">http://github.com/jaegerpicker/JSUnitTestBackBone</a>
-					<a href="http://github.com/jaegerpicker/reveal.js">http://github.com/jaegerpicker/reveal.js</a>
+					Example Code: <a href="http://github.com/jaegerpicker/JSUnitTestBackBone">http://github.com/jaegerpicker/JSUnitTestBackBone</a>
+					Slides code:<a href="http://github.com/jaegerpicker/reveal.js">http://github.com/jaegerpicker/reveal.js</a> based upon the really cool project <a href="http://http://lab.hakim.se/reveal-js/#/">Reveal.js</a>
+					Slides on the web:<a href="http://jaegerpicker.github.io/JSUnitTestingSlides/index.html">http://jaegerpicker.github.io/JSUnitTestingSlides/index.html</a>
 				</section>
 			</div>
 
