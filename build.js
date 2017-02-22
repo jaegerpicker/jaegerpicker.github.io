@@ -42,7 +42,9 @@ metalsmith(__dirname)
         tables: true,
         highlight: highlighter()
     }))
-    .use(snippet())
+    .use(snippet({
+        stop: ['<span class="more">']
+    }))
     .use(permalinks())
     .use(templates({
         engine: 'jade',

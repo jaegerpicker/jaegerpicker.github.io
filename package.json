@@ -1,8 +1,12 @@
 {
-  "name": "Shawn's Blog",
+  "name": "Shawns_Blog",
   "version": "0.0.1",
   "private": true,
   "description": "Blog",
+  "scripts": {
+      "build": "node build.js",
+      "deploy": "npm run build && cd build && git init . && git add . && git commit -m \"Deploy\"; git push \"git@github.com:jaegerpicker/jaegerpicker.github.io.git\" master:gh-pages --force && rm -fr .git"
+  },
   "author": "Shawn Campbell <jaegerpicker@gmail.com>",
   "license": "MIT",
   "dependencies": {
