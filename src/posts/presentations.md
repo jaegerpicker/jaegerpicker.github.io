@@ -5,5 +5,5 @@ author: Shawn Campbell <jaegerpicker@gmail.com>
 template: post.jade
 ---
 
-[JS Unit Testing](JSUnitTestingSlides/index.html "JS Unit Testing Slides")
-[LudumDare33](LudumDate33/index.html "LudumDare33")
+[JS Unit Testing](../JSUnitTestingSlides/index.html "JS Unit Testing Slides")
+[LudumDare33](../LudumDare33/index.html "LudumDare33")
